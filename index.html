@@ -1,179 +1,445 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>CV - Marlene Carvalho</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <style>
-      /* Navbar con nuevo gradiente azul */
-      #sideNav {
-        background: linear-gradient(to right, #0046ad, #3a66ff); /* azul intenso a azul claro */
-      }
-
-      /* Cambiar color principal de títulos y elementos con .text-primary */
-      .text-primary {
-        color: #0046ad !important;
-      }
-
-      /* Links y botones con hover en el color principal */
-      a, a:hover {
-        color: #0046ad;
-      }
-
-      /* Opcional: línea horizontal en color acorde al tema */
-      hr {
-        border-color: #0046ad;
-      }
-    </style>
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Marlene Carvalho</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Perfilito.jpg" alt="Foto de Marlene Carvalho"/>
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-        </ul>
-      </div>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlene Carvalho - QA Analyst & Co-founder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-en="Home" data-es="Inicio">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-es="Sobre mí">About</a>
+                <a href="#experience" class="nav-link" data-en="Experience" data-es="Experiencia">Experience</a>
+                <a href="#education" class="nav-link" data-en="Education" data-es="Educación">Education</a>
+                <a href="#skills" class="nav-link" data-en="Skills" data-es="Habilidades">Skills</a>
+            </div>
+            <div class="nav-actions">
+                <div class="language-switcher">
+                    <button id="language-toggle" class="language-btn">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-lang">ES</span>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
     </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content">
-          <h1 class="mb-0">
-            Marlene
-            <span class="text-primary">Carvalho</span>
-          </h1>
-          <div class="subheading mb-5">
-            CABA, Buenos Aires, Argentina · 15-3608-0867 ·
-            <a href="mailto:ceballocarvalhomarlene@gmail.com">ceballocarvalhomarlene@gmail.com</a>
-          </div>
-          <p class="lead mb-5">QA Analyst con experiencia en testing manual de sitios web y mobile, reportes de defectos, metodologías ágiles (Scrum/Kanban) y herramientas como Postman, Jira, Selenium, Cypress y más. Comprometida con la calidad y la mejora continua.</p>
-          <div class="social-icons">
-            <a class="social-icon" href="https://www.linkedin.com/in/marlcarv/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="social-icon" href="https://github.com/MarleneCarvalho23" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Experience-->
-      <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Experiencia</h2>
 
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Quality Assurance Tester</h3>
-              <div class="subheading mb-3">MRM Worldwide Argentina S.R.L.</div>
-              <p>Metodología Scrum/Kanban en equipo internacional. Testeo manual de sitios web y aplicaciones móviles, reporte y seguimiento de issues.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="img/Perfilito.jpg" alt="Marlene Carvalho" class="hero-img">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span data-en="Hello, I'm" data-es="Hola, soy">Hello, I'm</span> <span class="highlight">Marlene Carvalho</span>
+                        </h1>
+                        <p class="hero-subtitle" data-en="QA Analyst & Co-founder specialized in manual and automated testing" data-es="QA Analyst & Co-founder especializada en testing manual y automatizado">QA Analyst & Co-founder specialized in manual and automated testing</p>
+                        <p class="hero-description" data-en="Professional committed to software quality, agile methodologies and continuous improvement. Co-founder of Qlarity Testing, focused on providing innovative E-commerce solutions." data-es="Profesional comprometida con la calidad del software, metodologías ágiles y la mejora continua. Co-fundadora de Qlarity Testing, enfocada en brindar soluciones en E-commerce innovadoras.">
+                            Professional committed to software quality, agile methodologies and continuous improvement. 
+                            Co-founder of Qlarity Testing, focused on providing innovative E-commerce solutions.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">Junio 2022 - Noviembre 2023</span></div>
-          </div>
+        </div>
+    </section>
 
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Agente Administrativo</h3>
-              <div class="subheading mb-3">Servicio Penitenciario Federal</div>
-              <p>Auxiliar en tareas administrativas (Sistema GDE), comunicación con afiliados, reporte y seguimiento de defectos en el Sistema SEIE.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-es="Sobre mí">About Me</h2>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">Diciembre 2017 - Actualidad</span></div>
-          </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I am a QA Analyst passionate about software quality with solid experience in manual testing of websites and mobile applications. My focus is on implementing agile methodologies like Scrum and Kanban, working in international teams." data-es="Soy una QA Analyst apasionada por la calidad del software con experiencia sólida en testing manual de sitios web y aplicaciones móviles. Mi enfoque se centra en la implementación de metodologías ágiles como Scrum y Kanban, trabajando en equipos internacionales.">
+                        I am a QA Analyst passionate about software quality with solid experience in manual testing 
+                        of websites and mobile applications. My focus is on implementing agile methodologies 
+                        like Scrum and Kanban, working in international teams.
+                    </p>
+                    <p data-en="As Co-founder of <strong>Qlarity Testing</strong>, I lead initiatives to provide high-quality testing services, combining technical expertise with business vision to create innovative solutions in the Quality Assurance area." data-es="Como Co-fundadora de <strong>Qlarity Testing</strong>, lidero iniciativas para brindar servicios de testing de alta calidad, combinando experiencia técnica con visión empresarial para crear soluciones innovadoras en el área de Quality Assurance.">
+                        As Co-founder of <strong>Qlarity Testing</strong>, I lead initiatives to provide 
+                        high-quality testing services, combining technical expertise with business vision to create 
+                        innovative solutions in the Quality Assurance area.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3 data-en="Personal Information" data-es="Información Personal">Personal Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>CABA, Buenos Aires, Argentina</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>15-3608-0867</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ceballocarvalhomarlene@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <span data-en="Advanced English (C1)" data-es="Inglés avanzado (C1)">Advanced English (C1)</span>
+                        </div>
+                        
+                        <div class="contact-button">
+                            <a href="mailto:ceballocarvalhomarlene@gmail.com" class="btn btn-primary btn-full">
+                                <i class="fas fa-envelope"></i>
+                                <span data-en="Send Email" data-es="Enviar Email">Send Email</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Asistente en Marketing</h3>
-              <div class="subheading mb-3">Cuatro Group Bienes Raíces</div>
-              <p>Asistencia en marketing y captación de nuevos clientes.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Professional Experience" data-es="Experiencia Profesional">Professional Experience</h2>
+                <p class="section-subtitle" data-en="My journey in the testing world" data-es="Mi trayectoria en el mundo del testing">My journey in the testing world</p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">Septiembre 2015 - Agosto 2017</span></div>
-          </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Co-founder & QA Lead</h3>
+                            <span class="company">Qlarity Testing</span>
+                            <span class="period" data-en="May 2025 - Present" data-es="Mayo 2025 - Presente">May 2025 - Present</span>
+                        </div>
+                        <p class="timeline-description" data-en="Co-founder of company specialized in Quality Assurance services. Leadership in testing strategies, implementation of quality processes and development of innovative solutions for international clients." data-es="Co-fundadora de empresa especializada en servicios de Quality Assurance. Liderazgo en estrategias de testing, implementación de procesos de calidad y desarrollo de soluciones innovadoras para clientes internacionales.">
+                            Co-founder of company specialized in Quality Assurance services. Leadership in 
+                            testing strategies, implementation of quality processes and development of 
+                            innovative solutions for E-commerce sites.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" data-en="Leadership" data-es="Liderazgo">Leadership</span>
+                            <span class="tag" data-en="QA Strategy" data-es="Estrategia QA">QA Strategy</span>
+                            <span class="tag" data-en="Entrepreneurship" data-es="Emprendimiento">Entrepreneurship</span>
+                            <span class="tag" data-en="Team Management" data-es="Gestión de equipos">Team Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Quality Assurance Tester</h3>
+                            <span class="company">MRM Worldwide Argentina S.R.L.</span>
+                            <span class="period" data-en="June 2022 - November 2023" data-es="Junio 2022 - Noviembre 2023">June 2022 - November 2023</span>
+                        </div>
+                        <p class="timeline-description" data-en="Implementation of Scrum/Kanban methodologies in international team. Comprehensive manual testing of websites and mobile applications, detailed reporting and issue tracking until resolution." data-es="Implementación de metodologías Scrum/Kanban en equipo internacional. Testing manual exhaustivo de sitios web y aplicaciones móviles, reporte detallado y seguimiento de issues hasta su resolución.">
+                            Implementation of Scrum/Kanban methodologies in international team. Comprehensive manual 
+                            testing of websites and mobile applications, detailed reporting and issue tracking 
+                            until resolution.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Scrum</span>
+                            <span class="tag" data-en="Manual Testing" data-es="Testing Manual">Manual Testing</span>
+                            <span class="tag" data-en="Mobile Testing" data-es="Mobile Testing">Mobile Testing</span>
+                            <span class="tag" data-en="Bug Tracking" data-es="Bug Tracking">Bug Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="Administrative Agent" data-es="Agente Administrativo">Administrative Agent</h3>
+                            <span class="company" data-en="Federal Penitentiary Service" data-es="Servicio Penitenciario Federal">Federal Penitentiary Service</span>
+                            <span class="period" data-en="December 2017 - Present" data-es="Diciembre 2017 - Presente">December 2017 - Present</span>
+                        </div>
+                        <p class="timeline-description" data-en="Administrative management using GDE System, effective communication with affiliates, identification and reporting of defects in SEIE System, contributing to continuous improvement of internal processes." data-es="Gestión administrativa utilizando Sistema GDE, comunicación efectiva con afiliados, identificación y reporte de defectos en el Sistema SEIE, contribuyendo a la mejora continua de procesos internos.">
+                            Administrative management using GDE System, effective communication with affiliates, 
+                            identification and reporting of defects in SEIE System, contributing to continuous 
+                            improvement of internal processes.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" data-en="Administration" data-es="Administración">Administration</span>
+                            <span class="tag" data-en="Systems" data-es="Sistemas">Systems</span>
+                            <span class="tag" data-en="Communication" data-es="Comunicación">Communication</span>
+                            <span class="tag" data-en="Processes" data-es="Procesos">Processes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="Marketing Assistant" data-es="Asistente en Marketing">Marketing Assistant</h3>
+                            <span class="company" data-en="Cuatro Group Real Estate" data-es="Cuatro Group Bienes Raíces">Cuatro Group Real Estate</span>
+                            <span class="period" data-en="September 2015 - August 2017" data-es="Septiembre 2015 - Agosto 2017">September 2015 - August 2017</span>
+                        </div>
+                        <p class="timeline-description" data-en="Comprehensive support in digital and traditional marketing strategies, acquisition and retention of new clients, real estate market analysis." data-es="Apoyo integral en estrategias de marketing digital y tradicional, captación y fidelización de nuevos clientes, análisis de mercado inmobiliario.">
+                            Comprehensive support in digital and traditional marketing strategies, acquisition and 
+                            retention of new clients, real estate market analysis.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag" data-en="Marketing" data-es="Marketing">Marketing</span>
+                            <span class="tag" data-en="Acquisition" data-es="Captación">Acquisition</span>
+                            <span class="tag" data-en="Analysis" data-es="Análisis">Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Education-->
-      <section class="resume-section" id="education">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Educación</h2>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Universidad Argentina de la Empresa (UADE)</h3>
-              <div class="subheading mb-3">Diseño Multimedia y de Interacción</div>
-              <p>Marzo 2025 - En curso</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Education" data-es="Educación">Education</h2>
+                <p class="section-subtitle" data-en="Academic and professional training" data-es="Formación académica y profesional">Academic and professional training</p>
             </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Primera Escuela de Arte Multimedial Da Vinci</h3>
-              <div class="subheading mb-3">Analista de Sistemas</div>
-              <p>Marzo 2020 - Julio 2021</p>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-en="Web Design and Programming" data-es="Diseño y Programacion Web">Web Design and Programming</h3>
+                        <p class="institution" data-en="Da Vinci First School of Multimedia Arts" data-es="Primera Escuela de Arte Multimedial Da Vinci">Da Vinci First School of Multimedia Arts</p>
+                        <p class="period" data-en="August 2025 - In progress" data-es="Agosto 2025 - En curso">August 2025 - In progress</p>
+                        <p class="description" data-en="Specialization in modern web design, user interfaces and digital experience." data-es="Especialización en diseño web moderno, interfaces de usuario y experiencia digital.">
+                            Specialization in modern web design, user interfaces and digital experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-en="Multimedia and Interaction Design" data-es="Diseño Multimedia y de Interacción">Multimedia and Interaction Design</h3>
+                        <p class="institution" data-en="Argentine University of Enterprise (UADE)" data-es="Universidad Argentina de la Empresa (UADE)">Argentine University of Enterprise (UADE)</p>
+                        <p class="period" data-en="March 2025 - July 2025" data-es="Marzo 2025 - Julio 2025">March 2025 - July 2025</p>
+                        <p class="description" data-en="Comprehensive training in digital design, user experience and multimedia technologies." data-es="Formación integral en diseño digital, experiencia de usuario y tecnologías multimedia.">
+                            Comprehensive training in digital design, user experience and multimedia technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-en="Systems Analyst" data-es="Analista de Sistemas">Systems Analyst</h3>
+                        <p class="institution" data-en="Da Vinci First School of Multimedia Arts" data-es="Primera Escuela de Arte Multimedial Da Vinci">Da Vinci First School of Multimedia Arts</p>
+                        <p class="period" data-en="March 2020 - July 2021" data-es="Marzo 2020 - Julio 2021">March 2020 - July 2021</p>
+                        <p class="description" data-en="Solid foundations in systems analysis, programming and software architecture." data-es="Fundamentos sólidos en análisis de sistemas, programación y arquitectura de software.">
+                            Solid foundations in systems analysis, programming and software architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-en="QA Bootcamp" data-es="Bootcamp QA">QA Bootcamp</h3>
+                        <p class="institution">AcademiaQA.com</p>
+                        <p class="period" data-en="May 2023 - June 2023" data-es="Mayo 2023 - Junio 2023">May 2023 - June 2023</p>
+                        <p class="description" data-en="Intensive training in testing, advanced tools and agile methodologies." data-es="Intensivo en testing, herramientas avanzadas y metodologías ágiles.">
+                            Intensive training in testing, advanced tools and agile methodologies.
+                        </p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3 data-en="QA Testing Course" data-es="Curso QA Testing">QA Testing Course</h3>
+                        <p class="institution" data-en="'Codo a Codo' Program" data-es="Programa 'Codo a Codo'">Codo a Codo Program</p>
+                        <p class="period" data-en="March 2022 - July 2022" data-es="Marzo 2022 - Julio 2022">March 2022 - July 2022</p>
+                        <p class="description" data-en="Specialization in testing methodologies, QA tools and best practices." data-es="Especialización en metodologías de testing, herramientas QA y mejores prácticas.">
+                            Specialization in testing methodologies, QA tools and best practices.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Programa ‘Codo a Codo’</h3>
-              <div class="subheading mb-3">Curso QA Testing</div>
-              <p>Marzo 2022 - Julio 2022</p>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Bootcamp QA</h3>
-              <div class="subheading mb-3">AcademiaQA.com</div>
-              <p>Mayo 2023 - Junio 2023</p>
-            </div>
-          </div>
         </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Skills-->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Habilidades</h2>
-          <div class="subheading mb-3">Lenguajes y Herramientas</div>
-            <ul class="list-inline dev-icons">
-  <li class="list-inline-item"><i class="fab fa-html5" title="HTML5"></i></li>
-  <li class="list-inline-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
-  <li class="list-inline-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
-  <li class="list-inline-item"><img src="assets/img/jira.png" alt="Jira" title="Jira" height="40"></li>
-  <li class="list-inline-item"><img src="assets/img/mysql.png" alt="MySQL" title="MySQL" height="40"></li>
-  <li class="list-inline-item"><img src="assets/img/postman.png" alt="Postman" title="Postman" height="40"></li>
-</ul>
-          <div class="subheading mb-3">Herramientas de QA</div>
-          <ul class="fa-ul mb-0">
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Jira, MySQL, Postman, Qase, Lambdatest</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Katalon Studio, Selenium, Cypress</li>
-          </ul>
-          <div class="subheading mt-3 mb-3">Idiomas</div>
-          <ul class="fa-ul mb-0">
-            <li><span class="fa-li"><i class="fas fa-check"></i></span>Inglés avanzado (C1)</li>
-          </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Skills" data-es="Habilidades">Skills</h2>
+                <p class="section-subtitle" data-en="Technologies and tools I master" data-es="Tecnologías y herramientas que domino">Technologies and tools I master</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 data-en="Languages and Technologies" data-es="Lenguajes y Tecnologías">Languages and Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 data-en="QA Tools" data-es="Herramientas de QA">QA Tools</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>Jira</h4>
+                                <p data-en="Project management and bug tracking" data-es="Gestión de proyectos y tracking de bugs">Project management and bug tracking</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>Postman</h4>
+                                <p data-en="API and web services testing" data-es="Testing de APIs y servicios web">API and web services testing</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>Selenium</h4>
+                                <p data-en="Web testing automation" data-es="Automatización de testing web">Web testing automation</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>Cypress</h4>
+                                <p data-en="Modern end-to-end testing" data-es="Testing end-to-end moderno">Modern end-to-end testing</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>Qase</h4>
+                                <p data-en="Test case management" data-es="Gestión de casos de prueba">Test case management</p>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>LambdaTest</h4>
+                                <p data-en="Cross-browser cloud testing" data-es="Testing cross-browser en la nube">Cross-browser cloud testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 data-en="Methodologies" data-es="Metodologías">Methodologies</h3>
+                    <div class="methodologies">
+                        <div class="methodology-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Scrum</span>
+                        </div>
+                        <div class="methodology-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Kanban</span>
+                        </div>
+                        <div class="methodology-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Agile</span>
+                        </div>
+                        <div class="methodology-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span data-en="Continuous Testing" data-es="Continuous Testing">Continuous Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-en="&copy; 2025 Marlene Carvalho. All rights reserved." data-es="&copy; 2025 Marlene Carvalho. Todos los derechos reservados.">&copy; 2025 Marlene Carvalho. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/marlcarv/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/MarleneCarvalho23" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://qlaritytesting.com" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
